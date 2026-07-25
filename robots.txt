@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://claude1234code-ai.github.io/sitemap.xml
