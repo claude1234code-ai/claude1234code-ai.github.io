@@ -8,11 +8,30 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sanket — Web, Design & Stories">
 <meta property="og:description" content="Websites, interactive pages, and stories — made to order. Currently booking new projects.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://claude1234code-ai.github.io/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://claude1234code-ai.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sanket — Web, Design & Stories">
 <meta name="twitter:description" content="Websites, interactive pages, and stories — made to order.">
-<!-- Want an image preview too? Add: <meta property="og:image" content="https://yourusername.github.io/preview.png"> once you have a screenshot hosted. -->
+<meta name="twitter:image" content="https://claude1234code-ai.github.io/preview.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%2305070D' stroke='%237FE7FF' stroke-width='4'/%3E%3Ctext x='50' y='66' font-size='50' font-family='Arial,sans-serif' font-weight='700' fill='%237FE7FF' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Sanket — Web, Design & Stories",
+  "url": "https://claude1234code-ai.github.io/",
+  "image": "https://claude1234code-ai.github.io/preview.png",
+  "description": "Freelance web design, interactive pages, graphic design, and story/manhwa scripts, made to order.",
+  "email": "voidsaryan@gmail.com",
+  "sameAs": ["https://instagram.com/s2_saryan"],
+  "priceRange": "₹900–₹7,000"
+}
+</script>
+<!-- Want visitor analytics? Plausible (privacy-friendly, no cookie banner needed) or GA4 both work as a single script tag here — add one once you've made an account. -->
+<!-- Want people to book a call instead of only emailing? Drop a Calendly or cal.com link in the "Or reach me directly" block in the contact section once you've set one up. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Sora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -117,6 +136,10 @@
   .request{font-size:13.5px;color:var(--cyan);text-decoration:none;white-space:nowrap;border-bottom:1px solid transparent;}
   .request:hover{border-bottom-color:var(--cyan);}
   .sheet-note{margin-top:22px;color:var(--ink-dim);font-size:13.5px;font-style:italic;}
+  .scope-note{margin-top:22px;padding:20px 22px;}
+  .scope-grid{display:flex;flex-wrap:wrap;gap:9px;}
+  .scope-chip{font-family:'IBM Plex Mono',monospace;font-size:12px;padding:6px 12px;border:1px solid var(--rule);border-radius:20px;color:var(--ink-dim);background:rgba(127,231,255,0.03);}
+  .scope-foot{margin:14px 0 0 0;color:var(--ink-dim);font-size:13px;}
 
   /* WORK SHOWCASE */
   .case-grid{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
@@ -141,6 +164,9 @@
   .qr-grid span.off{background:transparent;}
   .envelope{width:44px;height:30px;border:1.5px solid var(--amber);border-radius:3px;position:relative;opacity:.85;}
   .envelope::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg, transparent 48%, var(--amber) 49%, var(--amber) 51%, transparent 52%), linear-gradient(45deg, transparent 48%, var(--amber) 49%, var(--amber) 51%, transparent 52%);}
+  .mockup-story{height:110px;padding:16px 18px;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.7;color:var(--ink-dim);background:rgba(127,231,255,0.02);overflow:hidden;}
+  .mockup-story .cue{color:var(--violet);}
+  .mockup-story .cursor{display:inline-block;width:6px;height:11px;background:var(--cyan);margin-left:2px;vertical-align:middle;animation:pulse 1s steps(2) infinite;}
   .case-info{padding:20px 22px 22px 22px;}
   .case-tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--cyan);}
   .case-card h3{font-size:18px;margin:9px 0 7px 0;}
@@ -301,6 +327,17 @@
         </article>
       </div>
       <p class="sheet-note">Prices shift with scope, timeline, and revisions — think of these as the floor, not the final bill.</p>
+      <div class="scope-note glass">
+        <p class="eyebrow" style="margin-bottom:10px;">What moves the number</p>
+        <div class="scope-grid">
+          <span class="scope-chip">+ extra pages / sections</span>
+          <span class="scope-chip">+ custom illustration</span>
+          <span class="scope-chip">+ animation &amp; interactivity</span>
+          <span class="scope-chip">+ CMS so you can edit it yourself</span>
+          <span class="scope-chip">+ rush turnaround</span>
+        </div>
+        <p class="scope-foot">None of this is charged silently — every add-on gets confirmed with you before it's built.</p>
+      </div>
     </div>
   </section>
 
@@ -347,6 +384,15 @@
           <div class="envelope"></div>
         </div></div>
         <div class="case-info"><span class="case-tag">Interactive</span><h3>QR Love Letters</h3><p>Scan-a-code pages that reveal a letter — small, private, built for one person at a time.</p></div>
+      </article>
+      <article class="case-card glass">
+        <div class="mockup-chrome"><span></span><span></span><span></span><span class="url">script-sample.txt</span></div>
+        <div class="mockup-story">
+          <div><span class="cue">PANEL 1 — WIDE</span></div>
+          <div>A city that forgets its own name every dawn.</div>
+          <div style="margin-top:6px;"><span class="cue">CAPTION:</span> "Nobody built this place. It<span class="cursor"></span></div>
+        </div>
+        <div class="case-info"><span class="case-tag">Writing sample</span><h3>Panel Script Excerpt</h3><p>A taste of the register for story/manhwa commissions — a voice sample, not a client project.</p></div>
       </article>
       <article class="case-card case-card--open glass">
         <div class="case-info"><span class="case-tag">Open slot</span><h3>Your project</h3><p>This one's empty on purpose. Tell me what you're picturing.</p><a href="mailto:voidsaryan@gmail.com?subject=New%20project%20idea">Fill it →</a></div>
